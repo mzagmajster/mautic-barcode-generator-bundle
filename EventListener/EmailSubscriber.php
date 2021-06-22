@@ -12,16 +12,16 @@
 namespace MauticPlugin\MauticBarcodeGeneratorBundle\EventListener;
 
 
-use Mautic\CoreBundle\EventListener\CommonSubscriber;
 use Mautic\EmailBundle\EmailEvents;
 use Mautic\EmailBundle\Event as Events;
 use MauticPlugin\MauticBarcodeGeneratorBundle\Token\BarcodeTokenReplacer;
 use MauticPlugin\MauticBarcodeGeneratorBundle\Token\QrcodeTokenReplacer;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * Class EmailSubscriber.
  */
-class EmailSubscriber extends CommonSubscriber
+class EmailSubscriber implements EventSubscriberInterface
 {
 
     /**
