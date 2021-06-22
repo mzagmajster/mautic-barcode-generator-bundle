@@ -16,12 +16,12 @@ use \Mautic\IntegrationsBundle\Integration\Interfaces\ConfigFormFeatureSettingsI
 use Mautic\PluginBundle\Integration\AbstractIntegration;
 use MauticPlugin\MauticBarcodeGeneratorBundle\Form\Type\BarcodeConfigType;
 
-class BarcodeGeneratorIntegration implements ConfigFormFeatureSettingsInterface
+class BarcodeGeneratorIntegration implements AbstractIntegration
 {
-    public function getFeatureSettingsConfigFormName(): string
+    /*public function getFeatureSettingsConfigFormName(): string
     {
         return BarcodeConfigType::class;
-    }
+    }*/
 
     /**
      * {@inheritdoc}

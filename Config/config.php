@@ -31,13 +31,13 @@ return [
                 ]
             ]
         ],
-        'forms' => [
+        /*'forms' => [
             'mautic.plugin.barcode_generator.form.type.barcode_config' => [
                 'class'     => MauticPlugin\MauticBarcodeGeneratorBundle\Form\Type\BarcodeConfigType::class,
                 'arguments' => [
                 ],
             ],
-        ],
+        ],*/
         'other' => [
             'mautic.plugin.barcode_generator.token.replacer' => [
                 'class'     => \MauticPlugin\MauticBarcodeGeneratorBundle\Token\BarcodeTokenReplacer::class,
