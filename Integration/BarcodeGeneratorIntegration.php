@@ -16,7 +16,7 @@ use \Mautic\IntegrationsBundle\Integration\Interfaces\ConfigFormFeatureSettingsI
 use Mautic\PluginBundle\Integration\AbstractIntegration;
 use MauticPlugin\MauticBarcodeGeneratorBundle\Form\Type\BarcodeConfigType;
 
-class BarcodeGeneratorIntegration implements AbstractIntegration
+class BarcodeGeneratorIntegration extends AbstractIntegration
 {
     /*public function getFeatureSettingsConfigFormName(): string
     {
