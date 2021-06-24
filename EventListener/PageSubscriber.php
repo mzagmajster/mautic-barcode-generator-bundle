@@ -11,7 +11,7 @@
 
 namespace MauticPlugin\MauticBarcodeGeneratorBundle\EventListener;
 
-use Mautic\CoreBundle\EventListener\CommonSubscriber;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Mautic\LeadBundle\Model\LeadModel;
 use Mautic\PageBundle\Event\PageDisplayEvent;
 use Mautic\PageBundle\PageEvents;
@@ -21,7 +21,7 @@ use MauticPlugin\MauticBarcodeGeneratorBundle\Token\QrcodeTokenReplacer;
 /**
  * Class PageSubscriber.
  */
-class PageSubscriber extends CommonSubscriber
+class PageSubscriber implements EventSubscriberInterface
 {
 
     /**
